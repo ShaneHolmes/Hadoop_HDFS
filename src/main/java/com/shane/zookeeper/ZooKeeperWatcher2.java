@@ -3,7 +3,7 @@ package com.shane.zookeeper;
 import org.apache.zookeeper.*;
 
 /**
- * 实现监听有三种方式，这是第二种。
+ * 实现监听有三种方式，这是第二种
  * 这种方式process也是调用两次：在节点添加监听的时候一次，第一次create时触发监听一次
  */
 

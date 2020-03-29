@@ -3,7 +3,7 @@ package com.shane.zookeeper;
 import org.apache.zookeeper.*;
 
 /**
- * 实现监听有三种方式，这是第三种。
+ * 实现监听有三种方式，这是第三种
  * 这种方式process只调用一次：在节点添加监听才创建Watcher，不会触发执行process，第一次create时触发监听一次
  */
 
@@ -12,6 +12,7 @@ public class ZooKeeperWatcher3 {
     private static final int sessionTimeout = 4000;
 
     public static void main(String[] args) throws Exception{
+
         //创建zookeeper对象，watcher为null
         ZooKeeper zooKeeper = new ZooKeeper(connect, sessionTimeout, null);
 
