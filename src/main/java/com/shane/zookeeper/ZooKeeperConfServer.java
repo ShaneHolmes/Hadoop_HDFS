@@ -68,15 +68,15 @@ public class ZooKeeperConfServer {
                             }
 
                             //这里处理修改
+                            byte[] data = new byte[0];
+                            try {
+                                data = zooKeeper.getData(childPath,true, null);
+                            } catch (KeeperException e) {
+                                e.printStackTrace();
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
                             if (path.equals(childPath) && type == Event.EventType.NodeDataChanged) {
-                                byte[] data = new byte[0];
-                                try {
-                                    data = zooKeeper.getData(childPath,true, null);
-                                } catch (KeeperException e) {
-                                    e.printStackTrace();
-                                } catch (InterruptedException e) {
-                                    e.printStackTrace();
-                                }
                                 System.out.println("修改配置:\n"+"名称："+child+"\t新内容："+new String(data));
                             }
                         }
