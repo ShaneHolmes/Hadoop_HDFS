@@ -25,6 +25,7 @@ public class ZooKeeperWatcher2 {
         zooKeeper.create("/mydata/node","node_data".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE,CreateMode.PERSISTENT_SEQUENTIAL);
 
         zooKeeper.close();
+
     }
 }
 
