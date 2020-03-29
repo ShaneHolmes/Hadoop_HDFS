@@ -12,6 +12,7 @@ public class ZookeeperWatcher1 {
     private static final int sessionTimeout = 4000;
 
     public static void main(String[] args) throws Exception{
+
         //创建zookeeper对象，并创建一个Watcher去监听
         ZooKeeper zooKeeper = new ZooKeeper(connect, sessionTimeout, new Watcher() {
             //事件触发响应的方法，在process方法里面进行响应的逻辑的处理

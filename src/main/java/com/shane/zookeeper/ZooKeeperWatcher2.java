@@ -12,6 +12,7 @@ public class ZooKeeperWatcher2 {
     private static final int sessionTimeout = 4000;
 
     public static void main(String[] args) throws Exception{
+
         //创建zookeeper对象，watcher为自定义ZooKeeperWatcherCommon
         ZooKeeper zooKeeper = new ZooKeeper(connect, sessionTimeout, new ZooKeeperWatcherCommon());
 
