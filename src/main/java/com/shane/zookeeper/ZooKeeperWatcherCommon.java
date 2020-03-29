@@ -5,9 +5,11 @@ import org.apache.zookeeper.Watcher;
 
 /**
  * 这是一个自定义的监听器类.
+ *
  */
 
 public class ZooKeeperWatcherCommon implements Watcher {
+
     @Override
     public void process(WatchedEvent watchedEvent) {
         //获取事件类型
