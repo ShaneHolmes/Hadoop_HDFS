@@ -9,5 +9,8 @@
         <module name="Hadoop" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="kafka-examples" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
