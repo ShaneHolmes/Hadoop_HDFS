@@ -1,1 +1,3 @@
-com\shane\hive\MyUDF.class
+com\shane\hbase\HBaseMRWriteFruitReducer.class
+com\shane\hbase\HBaseMRReadFruitMapper.class
+com\shane\hbase\HBaseMRFruit2FruitRunner.class
