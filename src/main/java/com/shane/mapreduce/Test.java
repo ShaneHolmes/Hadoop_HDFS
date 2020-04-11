@@ -2,6 +2,8 @@ package com.shane.mapreduce;
 
 import java.util.Arrays;
 
+
+
 public class Test {
     public int[] intersection(int[] nums1, int[] nums2) {
         Arrays.sort(nums1);
@@ -31,7 +33,7 @@ public class Test {
 
     public static void main(String[] args) {
         Test test=new Test();
-
+//git teat
 //        int[] arr1=new int[]{1,2,2,1};
 //        int[] arr2=new int[]{2,2};
 //        int[] res=test.intersection(arr1,arr2);

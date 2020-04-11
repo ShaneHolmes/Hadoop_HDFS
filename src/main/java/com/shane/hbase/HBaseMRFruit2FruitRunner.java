@@ -13,6 +13,7 @@ import org.apache.hadoop.util.ToolRunner;
 
 import java.io.IOException;
 
+
 public class HBaseMRFruit2FruitRunner extends Configured implements Tool {
 
     public int run(String[] strings) throws Exception {
